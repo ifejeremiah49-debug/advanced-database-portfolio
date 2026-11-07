@@ -34,4 +34,4 @@ Q4 shows why the form of a query matters. The existing unique index on email cou
 The trade-off is cost. The four new indexes add about 25 MB of disk space and must be updated on every insert and update. For a payments system with heavy writes, each index slows writing, so only indexes that support frequent queries should be kept.
 
 ## My own observation
-(write 2 to 3 sentences here in your own words, for example which result surprised you and why)
+The most surprising result for me was Q1's 650-fold speedup; seeing the buffer reads plummet from 6,095 down to just 4 really highlighted how a well-designed composite index can almost entirely eliminate query costs by handling both the filtering and ordering. Conversely, Q2 was an important reality check, proving that indexes provide diminishing returns for low-selectivity queries. Finally, Q4 taught me that simply wrapping a column in a function like LOWER() can silently invalidate an existing index unless explicitly addressed with an expression index.
