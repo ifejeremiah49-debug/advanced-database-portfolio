@@ -37,4 +37,4 @@ Start with one PostgreSQL primary and replicas. Shard by wallet_id only when a s
 It ran on one machine, so there was no network between shards and no real failover. I did not demonstrate replication, failover or a cloud deployment.
 
 ## My own observation
-(write 2 to 3 sentences here in your own words)
+I found the discussion on replication trade-offs particularly striking. Seeing how synchronous replication protects the latest commits but risks blocking writes, while asynchronous replication risks losing recent commits during a failover, really brought the CAP theorem to life for me in the context of a payments system
