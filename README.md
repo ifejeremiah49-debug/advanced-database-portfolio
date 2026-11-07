@@ -1,6 +1,7 @@
 # Advanced Database Systems Portfolio
 
-
+| | |
+|---|---|
 | **Student name** | Ifeoluwa Oluwalana |
 | **Matric number** | 2026/A/MIT/0815 |
 | **Student ID** | 301895229 |
@@ -10,12 +11,12 @@
 ## Contents
 
 | Portfolio | Folder | Status |
-
-| 1. Database Design and Modelling | portfolio-1-database-design | complete |
-| 2. Query Processing and Optimisation | portfolio-2-query-optimisation |complete|
-| 3. Transactions and Concurrency | portfolio-3-transactions-concurrency | complete |
+|---|---|---|
+| 1. Database Design and Modelling | portfolio-1-database-design | Complete |
+| 2. Query Processing and Optimisation | portfolio-2-query-optimisation | Complete |
+| 3. Transactions and Concurrency | portfolio-3-transactions-concurrency | Complete |
 | 4. NoSQL and Advanced Data Models | portfolio-4-nosql | Not started |
-| 5. Distributed and Cloud Database Exercise | portfolio-5-distributed-cloud | Not started |
+| 5. Distributed and Cloud Database Exercise | portfolio-5-distributed-cloud | In progress (hash partitioning completed) |
 
 ## Tools
-PostgreSQL, pgAdmin, MongoDB, Git and GitHub.
+PostgreSQL 18, pgAdmin 4, Git and GitHub.
