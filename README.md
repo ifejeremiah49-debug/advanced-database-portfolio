@@ -11,7 +11,7 @@
 
 | Portfolio | Folder | Status |
 
-| 1. Database Design and Modelling | portfolio-1-database-design | In progress |
+| 1. Database Design and Modelling | portfolio-1-database-design | complete |
 | 2. Query Processing and Optimisation | portfolio-2-query-optimisation | Not started |
 | 3. Transactions and Concurrency | portfolio-3-transactions-concurrency | Not started |
 | 4. NoSQL and Advanced Data Models | portfolio-4-nosql | Not started |
