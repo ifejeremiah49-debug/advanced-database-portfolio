@@ -25,4 +25,4 @@ The lost update happened because the application read the balance, calculated th
 I would use the default READ COMMITTED level together with explicit row locks for every balance change, and keep transactions short. For sensitive reporting or reconciliation I would use REPEATABLE READ or SERIALIZABLE with retry logic. Wallets should always be locked in a fixed order, for example by wallet_id, to avoid deadlocks when two customers pay each other at the same time.
 
 ## My own observation
-(write 2 to 3 sentences here in your own words)
+What surprised me most was how simply rewriting my SQL into a single statement (SET balance = balance - 5000) completely eliminated the lost update issue without needing complex application-level locking. Conversely, the strictness of the aborted transaction state was a harsh but excellent lesson, showing me that the database is designed to halt entirely rather than ever allow a half-completed transfer.
